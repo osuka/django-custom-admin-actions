@@ -14,6 +14,8 @@ Actions can be defined per object.
 
 By default the button bar uses the same style as the normal bar but with a white background and a bigger font.
 
+Similar projects: [django-admin-actions](https://pypi.org/project/django-admin-actions/)
+
 ## Basics
 
 - Extend from `custom_admin_actions.admin.CustomActionsModelAdmin`
@@ -64,7 +66,7 @@ class SubmissionAdmin(SavesOwnerMixin, CustomActionsModelAdmin):
 > Tip: you can use the request and context objects to hide/show actions
 
 Now you can test the app and you'll already see the bar
-![Image showing additional bar of buttons](./doc/submit_line_example.png)
+![Image showing additional bar of buttons](./docs/submit_line_example.png)
 
 Now, add a new function `custom_action_called` to the model admin page to process the actual button presses.
 
